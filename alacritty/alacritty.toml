@@ -1,0 +1,71 @@
+# import = [
+#     "~/.config/alacritty/themes/themes/coolnight.toml"
+# ]
+# import = [
+#     "~/.config/alacritty/themes/themes/monokai_charcoal.toml"
+# ]
+# import = [
+#     "~/.config/alacritty/themes/themes/kanagawa_dragon.toml"
+# ]
+# import = [
+#     "~/.config/alacritty/themes/themes/iterm.toml"
+# ]
+# import = [
+#     "~/.config/alacritty/themes/themes/base16_default_dark.toml"
+# ]
+import = [
+    "~/.config/alacritty/themes/themes/gruvbox_material_medium_dark.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[shell]
+program = "/bin/zsh"
+args = ["-l"]
+
+[window]
+option_as_alt = "Both"
+padding.x = 10
+padding.y = 10
+decorations = "Buttonless"
+opacity = 1
+blur = true
+# opacity = 0
+# blur = false
+# opacity = 1
+# blur = false
+
+[font]
+# normal.family = "MesloLGS Nerd Font Mono"
+normal.family = "JetBrainsMono Nerd Font"
+# normal.family = "FiraCode Nerd Font Mono"
+# normal.family = "JetBrainsMonoNL Nerd Font Propo"
+# normal.family = "MonaspiceNe Nerd Font"
+
+# normal.style = "Regular"
+#
+# bold.family = "MonaspiceNe Nerd Font"
+# bold.style = "Bold"
+#
+# italic.family = "MonaspiceNe Nerd Font"
+# italic.style = "Italic"
+#
+# bold_italic.family = "MonaspiceNe Nerd Font"
+# bold_italic.style = "Bold Italic"
+
+size = 17
+
+[selection]
+save_to_clipboard = true
+
+[keyboard]
+bindings = [
+  { key= "F", mods = "Control|Shift", action = "ToggleFullscreen" },
+  { key= "M", mods = "Control|Shift", action = "ToggleMaximized" },
+  { key= "Q", mods= "Control|Shift", action= "Quit" },
+  { key= "H", mods= "Control|Shift", action= "Hide" },
+]
+
+[mouse]
+hide_when_typing = true
